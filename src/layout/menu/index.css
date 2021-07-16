@@ -1,0 +1,181 @@
+.layout-menu-context {
+    position: absolute;
+    z-index: 120;
+}
+.layout-menu-context > ul {
+    position: absolute;
+    display: flex;
+    margin: 0;
+    padding: 2px;
+    flex-direction: column;
+    background: rgb(240,240,240);
+    border: 1px solid rgb(204,204,204);
+}
+.layout-menu-context > ul > li {
+    display: flex;
+    flex-direction: row;
+
+}
+
+
+
+
+
+
+
+
+.menu-context-item {
+    font-size: 9pt;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.menu-context-item:hover {
+    background: rgb(144,200,246);
+}
+
+
+.menu-context-item .icon {
+    display: flex;
+    width: 16px;
+    height: 16px;
+    margin: 3px 13px 3px 3px;
+}
+.menu-context-item .text {
+    white-space: nowrap;
+    display: flex;
+    flex: 1;
+    margin: 0 34px 0 0;
+}
+.menu-context-item .short {
+    margin: 0 34px 0 0;
+
+}
+
+.menu-context-item.seperator {
+    height: 1px;
+    background: rgb(215,215,215);
+    margin: 4px 4px 4px 34px;
+}
+
+.menu-context-item.disable{
+    color: rgb(160,160,160);
+}
+.menu-context-item.disable:hover {
+    background: rgb(228,228,228);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.layout-menu {
+    display: flex;
+    flex-direction: column;
+    user-select: none;
+
+}
+.layout-menu > ul {
+    display: flex;
+    width: 100%;
+    background: white;
+    flex-direction: row;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    z-index: 120;
+}
+.layout-menu > ul > li {
+    font-size: 9pt;
+    padding: 2px 7px;
+    border: 1px solid white;
+}
+.layout-menu > ul > li.active {
+    background: rgb(204, 232, 255);
+    border: 1px solid rgb(153, 209, 255);
+}
+.layout-menu > ul > li:hover {
+    background: rgb(204, 232, 255);
+    border: 1px solid rgb(153, 209, 255);
+}
+
+
+
+.layout-menu-proxy {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+}
+
+
+
+
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+li {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.sample-context {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+}
+
+.sample-context > li > div {
+  display: flex;
+  flex-direction: row;
+}
+
+
+.menu-context{
+  display: flex;
+  flex-direction: column;
+  background: rgb(240,240,240);
+  border: 1px solid rgb(204,204,204);
+}
+
+
+
+
+.layout-menu > ul {
+  font-size: 9pt;
+  display: flex;
+  flex-direction: row;
+}
+.layout-menu > ul > li {
+  border: 1px solid white;
+}
+.layout-menu > ul > li:hover {
+  background: rgb(204, 232, 255);
+  border: 1px solid rgb(153, 209, 255);
+}
+
+
+
+
+
