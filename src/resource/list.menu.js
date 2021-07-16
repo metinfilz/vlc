@@ -141,17 +141,81 @@ export const menuList = [
         },
         ]},
     {name: 'Audio', child: [
-            {name: 'Open Multiple Files...', shortcut: 'Ctrl+Shift+O', disable:true},
-            {name: 'Open Multiple Files...', shortcut: 'Ctrl+Shift+O', disable:true},
-            {name: 'Open Multiple Files...', shortcut: 'Ctrl+Shift+O', disable:true},
+        {
+            name: 'Audio Track',
+            child: []
+        },
+        {
+            name: 'Audio Device',
+            child: []
+        },
+        {
+            name: 'Stereo Mode',
+            child: []
+        },
+        {},
+        {
+            name: 'Visualizations',
+            child: []
+        },
+        {
+            name: 'Increase Volume',
+            icon: iconList.filter(i => i.key === 'volume_high').map(i => i.data),
 
-        ]},
+        },
+        {
+            name: 'Decrease Volume',
+            icon: iconList.filter(i => i.key === 'volume_low').map(i => i.data),
+        },
+        {
+            name: 'Mute',
+            icon: iconList.filter(i => i.key === 'volume_muted').map(i => i.data),
+
+        }
+    ]},
+
     {name: 'Video', child: [
-            {name: 'Open Multiple Files...', shortcut: 'Ctrl+Shift+O', disable:true},
-            {name: 'Open Multiple Files...', shortcut: 'Ctrl+Shift+O', disable:true},
-            {name: 'Open Multiple Files...', shortcut: 'Ctrl+Shift+O', disable:true},
-
-        ]},
+        {
+            name: 'Video Track',
+            child: []
+        },
+        {},
+        {
+            name: 'Fullscreen',
+        },
+        {
+            name: 'Always Fit Window',
+        },
+        {
+            name: 'Set as Wallpaper'
+        },
+        {},
+        {
+            name: 'Zoom',
+            child:[]
+        },
+        {
+            name: 'Aspect Ratio',
+            child:[]
+        },
+        {
+            name: 'Crop',
+            child:[]
+        },
+        {},
+        {
+            name: 'Deinterlace',
+            child: []
+        },
+        {
+            name: 'Deinterlace mode',
+            child: []
+        },
+        {},
+        {
+            name: 'Take Snapshot'
+        }
+    ]},
     {name: 'Subtitle', child: [
             {name: 'Add Subtitle File...'},
             {},
@@ -161,16 +225,57 @@ export const menuList = [
             },
     ]},
     {name: 'Tools', child: [
-            {name: 'Open Multiple Files...', shortcut: 'Ctrl+Shift+O', disable:true},
-            {name: 'Open Multiple Files...', shortcut: 'Ctrl+Shift+O', disable:true},
-            {name: 'Open Multiple Files...', shortcut: 'Ctrl+Shift+O', disable:true},
+        {
+            name: 'Effects and Filters',
+            shortcut: 'Ctrl+E',
+            icon: iconList.filter(i => i.key === 'setting').map(i => i.data),
+        },
+        {
+            name: 'Track Synchronization'
+        },
+        {
+            name: 'Media Information',
+            shortcut: 'Ctrl+I',
+            icon: iconList.filter(i => i.key === 'info').map(i => i.data),
+        },
+        {
+            name: 'Codec Information',
+            shortcut: 'Ctrl+J',
+            icon: iconList.filter(i => i.key === 'info').map(i => i.data),
+        },
+        {
+            name: 'VLM Configuration',
+            shortcut: 'Ctrl+Shift+W'
+        },
+        {
+            name: 'Program Guide'
+        },
+        {
+            name: 'Messages',
+            shortcut: 'Ctrl+M',
+            icon: iconList.filter(i => i.key === 'messages').map(i => i.data),
 
-        ]},
+        },
+        {
+            name: 'Plugins and extensions'
+        },
+        {},
+        {
+            name: 'Customize Interface...',
+            icon: iconList.filter(i => i.key === 'preferences').map(i => i.data),
+        },
+        {
+            name: 'Preferences',
+            shortcut: 'Ctrl+P',
+            icon: iconList.filter(i => i.key === 'preferences').map(i => i.data),
+        }
+
+    ]},
     {name: 'View', child: [
         {
             name: 'Playlist',
             shortcut: 'Ctrl+L',
-            icon: iconList.filter(i => i.key === 'help').map(i => i.data),
+            icon: iconList.filter(i => i.key === 'playlist').map(i => i.data),
         },
             {
                 name: 'Docked Playlist',
