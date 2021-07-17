@@ -1,0 +1,22 @@
+.layout-status {
+    font-size: 9pt;
+    display: flex;
+    flex-direction: row;
+    background: rgb(240,240,240);
+}
+.layout-status-text {
+    display: flex;
+    flex: 1;
+    margin: 2px;
+    border: 1px solid rgb(122,122,122);
+}
+.layout-status-speed {
+    display: flex;
+    margin: 2px;
+    border: 1px solid rgb(122,122,122);
+}
+.layout-status-time {
+    display: flex;
+    margin: 2px;
+    border: 1px solid rgb(122,122,122);
+}
