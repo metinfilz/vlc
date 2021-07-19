@@ -1,18 +1,60 @@
+.dialog-grid-container {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    user-select: none;
+}
+
+
+
+.dialog-grid {
+    position: absolute;
+    display: grid;
+    width: 300px;
+    height: 300px;
+    grid-template-columns: 8px auto 8px;
+    grid-template-rows: 8px auto 8px;
+}
+.dialog-grid-item {
+
+}
+
+.grid-content {
+    border: 1px solid black;
+}
+
+
+.t-border {
+    cursor: n-resize;
+}
+.r-border{
+    cursor: e-resize;
+}
+
+
+
+
 .dialog{
     display: flex;
 
 
-    top: 50px;
-    left: 50px;
-    width: 300px;
-    height: 300px;
     background: yellow;
     position: absolute;
 }
 
 .dialog > table {
+    width: 100%;
+    height: 100%;
     border-spacing: 0;
 }
+
+tr.horizontal-border {
+    height: 8px;
+}
+td.vertical-border {
+    width: 8px;
+}
+
 
 .border {
 }

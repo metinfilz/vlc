@@ -1,5 +1,13 @@
 import './index.css'
 import {useSelector} from "react-redux";
+import DialogLayout from "./dialog.layout";
+
+function Test(){
+    console.log("contructor")
+    return(
+        <>a</>
+    )
+}
 
 export default function Dialog(){
     const {visible} = useSelector(state => state.dialog)
@@ -8,25 +16,9 @@ export default function Dialog(){
         return(
             <>
                 <div className="dialog">
-                    <table>
-                        <tbody>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        </tbody>
-                    </table>
+                    <DialogLayout>
+                        <Test />
+                    </DialogLayout>
                 </div>
                 <div className="proxy" />
             </>
