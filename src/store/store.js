@@ -1,8 +1,8 @@
-import {configureStore} from "@reduxjs/toolkit";
-import {dialogSlice} from "./dialog/dialog.slice";
+import { configureStore } from '@reduxjs/toolkit';
+import dialogReducer from './slice/slice.dialog'
 
-export const store = configureStore({
+export default configureStore({
   reducer: {
-    dialog: dialogSlice.reducer
+    dialog: dialogReducer
   }
-})
+});
