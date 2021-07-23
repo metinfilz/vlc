@@ -1,0 +1,32 @@
+
+
+.layout-status {
+  font-size: 8pt;
+  display: flex;
+  flex-direction: row;
+  padding: 2px;
+  user-select: none;
+  background: rgb(240,240,240);
+}
+.status-text {
+  display: flex;
+  flex: 1;
+  border: 1px solid rgb(122,122,122);
+  margin: 2px;
+}
+.status-speed {
+  margin: 2px;
+  display: flex;
+  border-top: 1px solid rgb(160,160,160);
+  border-left: 1px solid rgb(160,160,160);
+  border-bottom: 1px solid white;
+  border-right: 1px solid white;
+}
+.status-time {
+  margin: 2px;
+  border-top: 1px solid rgb(160,160,160);
+  border-left: 1px solid rgb(160,160,160);
+  border-bottom: 1px solid white;
+  border-right: 1px solid white;
+  display: flex;
+}

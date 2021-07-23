@@ -1,0 +1,105 @@
+$menu-context-border: 1px solid rgb(204,204,204);
+$menu-context-background: rgb(240,240,240);
+
+$menu-item-hover-border: 1px solid rgb(204,232,255);
+$menu-item-hover-background: rgb(229,243,255);
+$menu-item-active-border: 1px solid rgb(153,209,255);
+$menu-item-active-background: rgb(204,232,255);
+
+$context-item-hover-background: rgb(144,200,246);
+$context-item-disable-hover-background: rgb(228,228,228);
+$context-item-seperator-background: rgb(215,215,215);
+
+
+.layout-menu {
+    user-select: none;
+}
+.layout-menu-proxy {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+}
+
+
+.layout-menu > ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.menu-context {
+    position: absolute;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    z-index: 500;
+    border: $menu-context-border;
+    background: $menu-context-background;
+    padding: 2px;
+}
+.menu-context > div {
+    display: contents;
+}
+
+
+
+.menu-item {
+    padding: 1px 6px;
+    border: 1px solid white;
+}
+.menu-item:hover {
+    border: $menu-item-hover-border;
+    background: $menu-item-hover-background;
+}
+.menu-item.active {
+    border: $menu-item-active-border;
+    background: $menu-item-active-background;
+}
+
+.context-item.disable {
+    color: gray
+}
+.context-item.disable img {
+    opacity: 0.5;
+    filter: grayscale(100%);
+}
+.context-item > div {
+    display: flex;
+    align-items: center;
+}
+
+.context-item:hover > div {
+    background: $context-item-hover-background;
+}
+.context-item.disable:hover div {
+    background: $context-item-disable-hover-background;
+}
+.context-item-icon {
+    width: 16px;
+    height: 16px;
+    padding: 3px 10px 3px 4px;
+}
+.context-item-icon > img {
+    width: 16px;
+    height: 16px;
+}
+.context-item-name {
+    padding: 0 32px 0 0;
+}
+
+.context-item-seperator > div:nth-child(n+2) {
+    height: 1px;
+    margin: 4px 0;
+    background: $context-item-seperator-background;
+}
+.context-item-arrow{
+    padding: 0 8px 0 0;
+}
+.context-item-arrow > img {
+    width: 10px;
+    height: 10px;
+}
