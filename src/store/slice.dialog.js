@@ -2,7 +2,7 @@ import {createSlice} from "@reduxjs/toolkit";
 
 const initialState = {
     visible: false,
-    dialog: ''
+    dialog: undefined
 }
 
 export const dialogSlice = createSlice({
@@ -15,9 +15,13 @@ export const dialogSlice = createSlice({
         },
         hide: (state, action) => {
             state.visible = false
+            state.dialog = undefined
+        },
+        outside: (state, action) => {
+            state.dialog = action.payload
         }
     }
 })
 
-export const {show, hide} = dialogSlice.actions
+export const {show, hide, outside} = dialogSlice.actions
 export default dialogSlice.reducer

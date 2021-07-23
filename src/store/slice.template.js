@@ -1,7 +1,6 @@
 import {createSlice} from "@reduxjs/toolkit";
 
 const initialState = {
-    dialog: undefined
 }
 
 export const templateSlice = createSlice({
@@ -14,4 +13,3 @@ export const templateSlice = createSlice({
     }
 })
 
-export const {dialog} = templateSlice.actions

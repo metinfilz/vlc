@@ -1,8 +1,12 @@
+import './dialog.scss'
+
 import {useSelector} from "react-redux";
 import {useEffect} from "react";
+import DialogWindow from "./component/dialog.container";
 
 export default function Dialog(){
-    const dialog = useSelector(state => state.template.dialog)
+    const visible = useSelector(state => state.dialog.visible)
+    const dialog = useSelector(state => state.dialog.dialog)
 
     useEffect(() =>  {
         switch (dialog) {
@@ -13,7 +17,7 @@ export default function Dialog(){
                 input.addEventListener('input', (e) => {
                     var tmppath = URL.createObjectURL(e.target.files[0]);
                     console.log(tmppath)
-                })  
+                })
                 break
             case 'open-folder':
                 break
@@ -24,6 +28,11 @@ export default function Dialog(){
         }
     }, [dialog])
     return (
-        <></>
+        visible ?
+            <DialogWindow>
+                <h1>{dialog}</h1>
+            </DialogWindow>
+        :
+            <></>
     )
 }

@@ -60,6 +60,10 @@ $context-item-seperator-background: rgb(215,215,215);
     background: $menu-item-active-background;
 }
 
+
+
+
+
 .context-item.disable {
     color: gray
 }
@@ -78,28 +82,31 @@ $context-item-seperator-background: rgb(215,215,215);
 .context-item.disable:hover div {
     background: $context-item-disable-hover-background;
 }
+
+
+
 .context-item-icon {
     width: 16px;
     height: 16px;
-    padding: 3px 10px 3px 4px;
+    padding: 3px 13px 3px 3px;
 }
 .context-item-icon > img {
     width: 16px;
     height: 16px;
 }
 .context-item-name {
-    padding: 0 32px 0 0;
+    padding: 0 35px 0 0;
 }
 
-.context-item-seperator > div:nth-child(n+2) {
-    height: 1px;
-    margin: 4px 0;
-    background: $context-item-seperator-background;
-}
 .context-item-arrow{
     padding: 0 8px 0 0;
 }
 .context-item-arrow > img {
     width: 10px;
     height: 10px;
+}
+.context-item-seperator > div:nth-child(n+2) {
+    height: 1px;
+    margin: 4px 0;
+    background: $context-item-seperator-background;
 }
